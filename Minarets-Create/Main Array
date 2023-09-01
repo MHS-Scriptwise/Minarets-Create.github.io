@@ -1,0 +1,3 @@
+Canvas_Array = []
+for i in range(gridx**2):
+  
