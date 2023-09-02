@@ -1,6 +1,9 @@
 from PIL import Image
 import turtle
 import math
+wn = turtle.Screen()
+wn.colormode(255)
+wn.setup(1000,1000)
 gsize = 1000
 tt = 10
 t.pensize(tt)
