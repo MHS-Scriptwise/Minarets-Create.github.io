@@ -4,6 +4,7 @@ gsize = 600
 img = image.new('RGB', (600,600), "white")
 Canvas_Array = []
 for i in range(gsize**2):
+  Canvas_Array.clear()
   color = img.getpixel((i%gsize,math.floor(i/gsize))
   R = color[0]
   G = color[1]
