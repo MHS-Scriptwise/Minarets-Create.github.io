@@ -10,9 +10,9 @@ t.pensize(tt)
 img = image.new('RGB', (1000,1000), "white")
 Canvas_Array = []
 def Canvas_Update():
-  for i in range(gsize**2):
+  for i in range((gsize**2)/tt):
     Canvas_Array.clear()
-    color = img.getpixel((i%gsize,math.floor(i/gsize))
+    color = img.getpixel((i%gsize+tt-1,math.floor(i/gsize)+tt-1)
     R = color[0]
     G = color[1]
     B = color[2]
