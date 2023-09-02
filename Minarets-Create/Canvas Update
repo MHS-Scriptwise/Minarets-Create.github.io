@@ -1,6 +1,3 @@
-wn = turtle.Screen()
-wn.colormode(255)
-wn.setup(1000,1000)
 def color_click(x,y):
   tx = x - (x%tt)
   ty = -y + (y%tt)
