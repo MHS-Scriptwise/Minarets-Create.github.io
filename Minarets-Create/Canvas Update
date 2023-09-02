@@ -4,4 +4,5 @@ wn..setup(600,600)
 
 while True:
   wn.update()
-  
+  Canvas_Update()
+  wn.mainloop()
