@@ -1,5 +1,6 @@
 from PIL import Image
-import turtle
+import tkinter
+from tkinter import turtle
 import math
 wn = turtle.Screen()
 wn.colormode(255)
