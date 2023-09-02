@@ -16,12 +16,11 @@ def square(din):
         t.right(90)
 def full_square(din,color):
     t.setheading(0)
-    t.color("black")
+    t.color(color)
     t.begin_fill()
     for i in range(4):
         t.forward(din)
         t.right(90)
-    t.fillcolor(color)
     t.end_fill()
 def grid(size,din,x,y):
     t.penup()
