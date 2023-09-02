@@ -1,8 +1,10 @@
 from PIL import Image
 import turtle
 import math
-gsize = 600
-img = image.new('RGB', (600,600), "white")
+gsize = 1000
+tt = 10
+t.pensize(tt)
+img = image.new('RGB', (1000,1000), "white")
 Canvas_Array = []
 def Canvas_Update():
   for i in range(gsize**2):
