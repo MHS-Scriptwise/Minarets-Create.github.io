@@ -1,4 +1,5 @@
 from PIL import Image
+import turtle
 import math
 gsize = 600
 img = image.new('RGB', (600,600), "white")
