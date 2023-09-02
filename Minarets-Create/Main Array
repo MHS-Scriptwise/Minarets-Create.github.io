@@ -1,3 +1,11 @@
+from PIL import Image
+import math
+img = image.new('RGB', (600,600), "white")
 Canvas_Array = []
 for i in range(gridy**2):
-  
+  color = img.getpixel((i%gridy),(math.floor(i/gridy))
+  R = color[0]
+  G = color[1]
+  B = color[2]
+  Canvas_Array.append([R,G,B])
+print(Canvas_Array)
