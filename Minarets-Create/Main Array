@@ -1,5 +1,6 @@
 from PIL import Image
 import math
+gsize = 600
 img = image.new('RGB', (600,600), "white")
 Canvas_Array = []
 for i in range(gsize**2):
