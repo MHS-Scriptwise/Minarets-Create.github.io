@@ -17,5 +17,3 @@ def Canvas_Update():
     G = color[1]
     B = color[2]
     Canvas_Array.append([R,G,B])
-for i in range(100):
-  print(Canvas_Array[i])
