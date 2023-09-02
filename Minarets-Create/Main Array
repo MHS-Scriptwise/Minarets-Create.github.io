@@ -9,4 +9,5 @@ for i in range(gsize**2):
   G = color[1]
   B = color[2]
   Canvas_Array.append([R,G,B])
-print(Canvas_Array)
+for i in range(100):
+  print(Canvas_Array[i])
