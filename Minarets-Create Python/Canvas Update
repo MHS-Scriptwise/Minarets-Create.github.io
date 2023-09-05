@@ -1,6 +1,6 @@
 def color_click(x,y):
-  tx = x - (x%tt)
-  ty = -y + (y%tt)
+  tx = x - (x%ts)
+  ty = -y + (y%ts)
   t.penup()
   setpos(tx,ty)
   t.pendown()
