@@ -2,18 +2,20 @@ from PIL import Image
 import tkinter
 from tkinter import turtle
 import math
+gsize = 100
+ts = 20
+wx = gsize*ts
+wy = gsize*ts
 wn = turtle.Screen()
 wn.colormode(255)
-wn.setup(1000,1000)
-gsize = 1000
-tt = 10
+wn.setup(wx,wy)
 t.pensize(tt)
-img = image.new('RGB', (1000,1000), "white")
+img = image.new('RGB', (wx,wy), "white")
 Canvas_Array = []
 def Canvas_Update():
-  for i in range((gsize**2)/tt):
+  for i in range((gsize**2)/ts):
     Canvas_Array.clear()
-    color = img.getpixel((i%gsize+tt-1,math.floor(i/gsize)+tt-1)
+    color = img.getpixel((i%gsize+ts-1,math.floor(i/gsize)+ts-1)
     R = color[0]
     G = color[1]
     B = color[2]
