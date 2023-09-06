@@ -1,11 +1,11 @@
 def color_click(x,y):
     tx = x - (x%ts)
-    ty = -y + (y%ts)
+    ty = y - (y%ts)+ts
     t.penup()
-    setpos(tx,ty)
+    t.setpos(tx,ty)
     t.pendown()
     t.color("red")
-    t.forward(tt-1)
+    draw_square(ts)
 while True:
     wn.update()
     wn.onscreenclick(color_click)
