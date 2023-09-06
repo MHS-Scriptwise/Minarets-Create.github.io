@@ -1,0 +1,5 @@
+Basics of HTML
+https://www.w3schools.com/html/html_intro.asp
+
+Pyscript Getting Started
+https://docs.pyscript.net/tutorials/getting-started/
