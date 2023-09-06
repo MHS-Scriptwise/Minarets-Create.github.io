@@ -2,48 +2,7 @@
 <!no-cors>
 <html>
   <head>
-    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-    <title>Minarets Create</title>
-    <py-env>
-      - turtle
-    </py-env>
   </head>
-
   <body>
-    <py-script>
-      import turtle
-      t = turtle.Turtle()
-      gsize = 100
-      ts = 10
-      wx = gsize*ts
-      wy = gsize*ts
-      wn = turtle.Screen()
-      t.hideturtle()
-      t.speed(0)
-      wn.colormode(255)
-      wn.setup(wx,wy)
-      Canvas_Array = []
-      print(gsize**2)
-      def draw_square(din):
-          t.setheading(0)
-          t.begin_fill()
-          for i in range(4):
-              t.forward(din)
-              t.right(90)
-          t.end_fill()
-      def color_click(x,y):
-        tx = x - (x%ts)
-        ty = y - (y%ts)+ts
-        t.penup()
-        t.setpos(tx,ty)
-        t.pendown()
-        t.color("red")
-        draw_square(ts)
-    while True:
-      wn.update()
-      wn.onscreenclick(color_click)
-      wn.mainloop()
-    </py-script>
   </body>
 </html>
