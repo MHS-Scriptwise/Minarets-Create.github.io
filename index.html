@@ -29,40 +29,40 @@
       t.speed(0)
       wn.colormode(255)
       wn.setup(wx,wy)
-      img = Image.new('RGB', (wx,wy), "white")
-      Canvas_Array = []
-      print(gsize**2)
-      def draw_square(din):
-          t.setheading(0)
-          t.begin_fill()
-          for i in range(4):
-              t.forward(din)
-              t.right(90)
-          t.end_fill()
-      def Canvas_Update():
-          for i in range((int(gsize**2/ts))):
-              Canvas_Array.clear()
-              color = img.getpixel((i%gsize+ts-1,math.floor(i/gsize)+ts-1))
-              R = color[0]
-              G = color[1]
-              B = color[2]
-              Canvas_Array.append([R,G,B])
-              print([R,G,B])
-      def color_click(x,y):
-        tx = x - (x%ts)
-        ty = y - (y%ts)+ts
-        t.penup()
-        t.setpos(tx,ty)
-        t.pendown()
-        t.color("red")
-        draw_square(ts)
+      #img = Image.new('RGB', (wx,wy), "white")
+      #Canvas_Array = []
+      #print(gsize**2)
+      #def draw_square(din):
+          #t.setheading(0)
+          #t.begin_fill()
+          #for i in range(4):
+              #t.forward(din)
+              #t.right(90)
+          #t.end_fill()
+      #def Canvas_Update():
+          #for i in range((int(gsize**2/ts))):
+              #Canvas_Array.clear()
+              #color = img.getpixel((i%gsize+ts-1,math.floor(i/gsize)+ts-1))
+              #R = color[0]
+              #G = color[1]
+              #B = color[2]
+              #Canvas_Array.append([R,G,B])
+              #print([R,G,B])
+      #def color_click(x,y):
+        #tx = x - (x%ts)
+        #ty = y - (y%ts)+ts
+        #t.penup()
+        #t.setpos(tx,ty)
+        #t.pendown()
+        #t.color("red")
+        #draw_square(ts)
     </py-script>
     <py-script> 
-        while True:
-        wn.update()
-        wn.onscreenclick(color_click)
-        Canvas_Update()
-        wn.mainloop()
+        #while True:
+          #wn.update()
+          #wn.onscreenclick(color_click)
+          #Canvas_Update()
+          #wn.mainloop()
     </py-script>
   </body>
 </html>
